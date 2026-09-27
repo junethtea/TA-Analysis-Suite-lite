@@ -185,7 +185,7 @@ Use **Clear** to remove the generated Cell Level charts and return the workspace
 The TA CSV template is provided as a **reference structure**, not as a fixed limitation on the number of TA ranges.
 
 - 📥 [Download TA.csv Template](https://drive.google.com/drive/folders/1DFhfw20mtoNP8x1slHTApGS6gNpahrFy?usp=sharing)
-- 📘 [Read the bilingual TA.csv Template Notes](TA_CSV_Template_Notes_EN_ID.txt)
+- 📘 [Read the bilingual TA.csv Template Notes](https://drive.google.com/drive/folders/1DFhfw20mtoNP8x1slHTApGS6gNpahrFy?usp=sharing)
 
 Keep the original TA range columns from your source system. The Universal TA Parser is designed to detect the available range structure automatically.
 
@@ -255,7 +255,7 @@ Your support helps fund continued development, testing and maintenance across QG
 **Jujun Junaedi**  
 RF Engineer | RF Post-Processing | GIS & QGIS Enthusiast
 
-- 📧 Email: [jujun.junaedi@outlook.com](mailto:jujun.junaedi@outlook.com)
+- 📧 Email: [dev.qgis.plugin@gmail.com](mailto:dev.qgis.plugin@gmail.com)
 - 💻 GitHub: [github.com/junethtea](https://github.com/junethtea)
 - 📦 TA Analysis Suite Lite: [GitHub Repository](https://github.com/junethtea/TA-Analysis-Suite-lite)
 
