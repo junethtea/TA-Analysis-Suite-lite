@@ -85,7 +85,7 @@ The recommended metadata fields are:
 
 `Begin Time` and `End Time` should contain valid date/time values when date-based filtering or aggregate selection is required.
 
-For the detailed bilingual CSV structure reference, see [`TA_CSV_Template_Notes_EN_ID.txt`](TA_CSV_Template_Notes_EN_ID.txt).
+For the detailed bilingual CSV structure reference, see [`TA_CSV_Template_Notes_EN_ID.txt`](https://drive.google.com/drive/folders/1DFhfw20mtoNP8x1slHTApGS6gNpahrFy?usp=sharing).
 
 ---
 
