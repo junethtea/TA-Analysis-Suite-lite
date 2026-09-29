@@ -1,0 +1,19 @@
+[general]
+name=TA Analysis Suite Lite
+qgisMinimumVersion=3.4
+qgisMaximumVersion=4.99
+description=Universal Timing Advance CSV parser and single-site Cell Level TA analysis for QGIS.
+about=TA Analysis Suite Lite is a focused QGIS tool for Universal Timing Advance CSV parsing and single-site Cell Level analysis. It supports automatic TA range detection, site/vendor/band/sector filtering, configurable chart settings, CDF visualization, and interactive chart tooltips. Advanced Pro functionality is intentionally excluded from the Lite source and represented only by locked navigation controls.
+version=1.0.0
+author=Jujun Junaedi
+email=dev.qgis.plugin@gmail.com
+repository=https://github.com/junethtea/TA-Analysis-Suite-lite
+tracker=https://github.com/junethtea/TA-Analysis-Suite-lite/issues
+homepage=https://github.com/junethtea/TA-Analysis-Suite-lite
+category=Vector
+tags=timing advance,TA,LTE,RF,telecom,drive test,cell analysis,QGIS,network optimization,Ericsson,ZTE
+icon=icon.png
+experimental=False
+deprecated=False
+server=False
+license=GPL-2.0-or-later

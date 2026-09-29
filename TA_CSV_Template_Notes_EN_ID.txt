@@ -1,0 +1,156 @@
+TA Analysis Suite Lite – TA.csv Template Notes
+===============================================
+
+ENGLISH
+-------
+
+This template is provided as a reference for the raw TA CSV structure used by TA Analysis Suite Lite.
+
+1. TA RANGE COUNT IS NOT FIXED
+--------------------------------
+The Universal TA Parser is NOT limited to 15 TA ranges.
+Different vendors and operators may provide different numbers of TA ranges.
+That is supported, as long as the TA range columns follow the required format below.
+
+2. STANDARD TA RANGE COLUMN FORMAT
+----------------------------------
+The TA range column format must be standardized before the CSV is used in TA Analysis Suite.
+Use explicit distance ranges in metres, for example:
+
+    0-156m, 156-234m, 234-546m, 546-1014m, ...
+
+The number of ranges and the distance boundaries may be different for each vendor/operator.
+For example, one source may use 12 ranges while another uses 15 or 47 ranges. That is fine.
+
+However, the column naming format should remain consistent: explicit distance ranges such as
+"0-156m", "156-234m", "234-546m", etc.
+
+Do NOT use these formats directly as TA range columns:
+
+    TA0, TA1, TA2, TA3, ...
+
+or:
+
+    156, 234, 546, 1014, 1950, ...
+
+If the source provides cumulative distance boundaries such as 156, 234, 546, ...,
+convert them to explicit ranges before using the CSV. For example:
+
+    156   -> 0-156m
+    234   -> 156-234m
+    546   -> 234-546m
+    1014  -> 546-1014m
+
+The parser is flexible about the NUMBER of TA ranges, but the TA range COLUMN FORMAT
+must be standardized.
+
+3. REQUIRED METADATA COLUMNS
+----------------------------
+The following metadata columns are required:
+
+    Vendor
+    Longitude
+    Latitude
+    Azimuth
+    cellband
+    Sector
+    siteid
+    Band
+    Begin Time
+    End Time
+    sitename
+
+4. DATE / TIME
+-------------
+Begin Time and End Time should contain valid date/time values.
+They are used for date detection and filtering workflows.
+
+5. RECOMMENDED PRACTICES
+------------------------
+1. Keep the original TA distribution values from the source data.
+2. Standardize the TA range column names to explicit metre ranges.
+3. Do not assume that every vendor/operator has the same number of TA ranges.
+4. Do not force every source into 15 ranges just to match an example.
+5. Make sure Latitude and Longitude contain valid coordinates.
+6. Keep Vendor, Azimuth, Sector, Band, cellband, siteid, and sitename consistent.
+7. Keep Begin Time and End Time available when date-based filtering is required.
+
+The template is a STRUCTURAL REFERENCE, not a restriction on the number of TA ranges.
+
+
+BAHASA INDONESIA
+----------------
+
+Template ini digunakan sebagai referensi struktur raw TA CSV yang digunakan oleh TA Analysis Suite Lite.
+
+1. JUMLAH RANGE TA TIDAK DIBATASI
+----------------------------------
+Universal TA Parser TIDAK dibatasi hanya 15 range TA.
+Vendor dan operator yang berbeda dapat memiliki jumlah range TA yang berbeda.
+Hal tersebut didukung, selama format kolom range TA mengikuti ketentuan di bawah.
+
+2. FORMAT KOLOM RANGE TA HARUS DISTANDARKAN
+--------------------------------------------
+Format nama kolom range TA harus diseragamkan terlebih dahulu sebelum CSV digunakan
+di TA Analysis Suite.
+Gunakan range jarak yang ditulis secara eksplisit dalam meter, misalnya:
+
+    0-156m, 156-234m, 234-546m, 546-1014m, ...
+
+Jumlah range dan batas jaraknya boleh berbeda untuk setiap vendor/operator.
+Misalnya satu sumber memiliki 12 range, sedangkan sumber lain memiliki 15 atau 47 range.
+Itu tidak masalah.
+
+Yang harus tetap konsisten adalah FORMAT NAMA KOLOM range TA, yaitu menggunakan range jarak
+eksplisit seperti "0-156m", "156-234m", "234-546m", dan seterusnya.
+
+JANGAN menggunakan format berikut secara langsung sebagai kolom range TA:
+
+    TA0, TA1, TA2, TA3, ...
+
+atau:
+
+    156, 234, 546, 1014, 1950, ...
+
+Jika source data memberikan cumulative distance seperti 156, 234, 546, dan seterusnya,
+ubah terlebih dahulu menjadi explicit range. Contoh:
+
+    156   -> 0-156m
+    234   -> 156-234m
+    546   -> 234-546m
+    1014  -> 546-1014m
+
+Parser fleksibel terhadap JUMLAH range TA, tetapi FORMAT KOLOM range TA harus distandarkan.
+
+3. KOLOM METADATA YANG WAJIB
+----------------------------
+Kolom metadata berikut wajib tersedia:
+
+    Vendor
+    Longitude
+    Latitude
+    Azimuth
+    cellband
+    Sector
+    siteid
+    Band
+    Begin Time
+    End Time
+    sitename
+
+4. DATE / TIME
+-------------
+Begin Time dan End Time harus berisi nilai tanggal/waktu yang valid.
+Keduanya digunakan untuk deteksi tanggal dan proses filtering berbasis tanggal.
+
+5. REKOMENDASI
+-------------
+1. Pertahankan nilai distribusi TA asli dari source data.
+2. Standarkan nama kolom range TA menjadi explicit range dalam meter.
+3. Jangan mengasumsikan semua vendor/operator memiliki jumlah range TA yang sama.
+4. Jangan memaksakan semua source menjadi 15 range hanya untuk mengikuti contoh.
+5. Pastikan Latitude dan Longitude berisi koordinat yang valid.
+6. Pastikan Vendor, Azimuth, Sector, Band, cellband, siteid, dan sitename konsisten.
+7. Pertahankan Begin Time dan End Time jika diperlukan filtering berbasis tanggal.
+
+Template ini adalah REFERENSI STRUKTUR, bukan batasan jumlah range TA.
